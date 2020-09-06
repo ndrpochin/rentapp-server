@@ -1,0 +1,7 @@
+backend/.env
+/frontend/node_modules
+/backend/node_modules
+/backend/config.js
+.vscode
+node_modules
+config.js

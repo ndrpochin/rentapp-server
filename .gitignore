@@ -4,4 +4,3 @@ backend/.env
 /backend/config.js
 .vscode
 node_modules
-config.js

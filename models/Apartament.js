@@ -99,12 +99,10 @@ const ApartamentSchema = Schema({
 
 //Creamos una metodo setImgUrl para almecenar las imagenes
 ApartamentSchema.methods.setImgUrl = function setImgUrl(filename) {
-   const port = config.port;
-   const host = config.host;
-   //this.photo = `${host}:${port}/public/${filename}`;
-   this.photos.push(`${host}:${port}/public/${filename}`);
+    const port = config.port;
+  const host = 'https://team5-rentapp.herokuapp.com';
+    this.photos.push(`${host}/public/${filename}`);
 }
-
 
 // Exportamos el modelo para usarlo en otros ficheros
 module.exports = mongoose.model('Apartament', ApartamentSchema);

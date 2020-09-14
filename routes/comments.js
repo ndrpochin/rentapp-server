@@ -27,7 +27,6 @@ router.get("/:idComment", async (req, res) => {
 
 //Crear un comment
 
-//revisar forma de post por pararms o por body
 router.post("/create/:idApartment/:userName", async (req, res) => {
   try {
     const apartment = await Apartment.findById(req.params.idApartment);

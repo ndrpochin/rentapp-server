@@ -1,0 +1,5 @@
+.history
+.env
+config.js
+.vscode
+node_modules
